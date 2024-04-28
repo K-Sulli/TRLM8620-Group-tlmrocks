@@ -15,9 +15,9 @@ const products = {
             "type": "droid",
             "class": 2,
             "title": i18n.getString("title", "1"),
-            "price": 3000,
+            "price": 1995,
             "qty": 0,
-            "imageURL": "img/3PO.png",
+            "imageURL": "img/E bike 2.jpg",
             "desc": i18n.getString("desc", "1")
         },
         {
@@ -25,9 +25,9 @@ const products = {
             "type": "droid",
             "class": 4,
             "title": i18n.getString("title", "2"),
-            "price": 800,
+            "price": 3695,
             "qty": 0,
-            "imageURL": "img/DUM-series.png",
+            "imageURL": "img/E bike 4.jpg",
             "desc": i18n.getString("desc", "2")
         },
         {
@@ -35,54 +35,54 @@ const products = {
             "type": "droid",
             "class": 1,
             "title": i18n.getString("title", "3"),
-            "price": 4300,
+            "price": 8995,
             "qty": 0,
-            "imageURL": "img/2-1B.png",
+            "imageURL": "img/E bike 1.jpg",
             "desc": i18n.getString("desc", "3")
         },
         {
             "productID" : 4,
             "type": "droid",
             "title": i18n.getString("title", "4"),
-            "price": 4500,
+            "price": 4295,
             "qty": 0,
-            "imageURL": "img/IG-88.png",
+            "imageURL": "img/E bike 3.jpg",
             "desc": i18n.getString("desc", "4")
         },
         {
             "productID" : 5,
             "type": "vehicle",
             "title": i18n.getString("title", "5"),
-            "price": 1000000,
+            "price": 29.95,
             "qty": 0,
-            "imageURL": "img/Sphyrna_Corevette.png",
+            "imageURL": "img/basket.jpg",
             "desc": i18n.getString("desc", "5")
         },
         {
             "productID" : 6,
             "type": "droid",
             "title": i18n.getString("title", "6"),
-            "price": 5210,
+            "price": 2995,
             "qty": 0,
-            "imageURL": "img/G2.png",
+            "imageURL": "img/E bike 5.jpg",
             "desc": i18n.getString("desc", "6")
         },
         {
             "productID" : 7,
             "type": "vehicle",
             "title": i18n.getString("title", "7"),
-            "price": 1500000,
+            "price": 99.95,
             "qty": 0,
-            "imageURL": "img/CR90.png",
+            "imageURL": "img/cover.jpg",
             "desc": i18n.getString("desc", "7")
         },
         {
             "productID" : 8,
             "type": "vehicle",
             "title": i18n.getString("title", "8"),
-            "price": 8000,
+            "price": 17.95,
             "qty": 0,
-            "imageURL": "img/74-Z.png",
+            "imageURL": "img/bell.jpg",
             "desc": i18n.getString("desc", "8")
         },
         /*
