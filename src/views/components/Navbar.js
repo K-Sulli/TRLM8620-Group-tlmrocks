@@ -22,7 +22,6 @@ let Navbar = {
 
         let localeLabel = i18n.getString("LocaleSelector", "localeLabel");
         let localeEN = i18n.getString("LocaleSelector", "localeEN");
-        let localeZH = i18n.getString("LocaleSelector", "localeZH");
         let localeFR = i18n.getString("LocaleSelector", "localeFR");
 
 
@@ -56,7 +55,7 @@ let Navbar = {
               <label for="locale"><h3>${localeLabel}</h3></label>
               <select id="locale" class="hamDrop">
                 <option value="en-US">${localeEN}</option>
-                <option value="zh-CN">${localeZH}</option>
+                <option value="fr-FR">${localeFR}</option>
               </select>
             </div>
         </section>
