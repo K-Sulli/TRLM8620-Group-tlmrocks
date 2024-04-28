@@ -16,11 +16,11 @@ let Browse = {
 
         if(type == "droids") {
             productMap = productList.get('droids');
-            title += "droids";
+            title += "E-Bikes";
         }
         else if(type == "vehicles") {
             productMap = productList.get('vehicles');
-            title += "vehicles";
+            title += "Accessories";
         }
 
         //view is solely for HTML markup, contains no static text
