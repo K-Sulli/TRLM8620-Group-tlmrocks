@@ -52,7 +52,7 @@ const i18n = {
 //used to determine the correct currency symbol
 var currencyMap = {
     'en-US': 'USD',
-    'zh-CN': 'CNY',
+    'fr-FR': 'EUR',
 };
 
 //function to perform rough conversion from galactic credits to real currencies
@@ -60,8 +60,8 @@ var convertCurrency = (price) => {
     switch (locale) {
         case 'en-US':
             return price * 1;
-        case 'zh-CN':
-            return price * 7; 
+        case 'fr-FR':
+            return price * 0.92; 
         default:
             return price;
     }

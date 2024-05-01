@@ -22,7 +22,6 @@ let Navbar = {
 
         let localeLabel = i18n.getString("LocaleSelector", "localeLabel");
         let localeEN = i18n.getString("LocaleSelector", "localeEN");
-        let localeZH = i18n.getString("LocaleSelector", "localeZH");
         let localeFR = i18n.getString("LocaleSelector", "localeFR");
 
 
@@ -31,7 +30,7 @@ let Navbar = {
         `<header>
         <!-- logo, search bar, local, profile drop down -->
         <section>
-            <img src="img/Sample Logo.png" id="logo" alt="${logoAlt}">
+            <img src="img/logo.png" id="logo" alt="${logoAlt}">
         </section>
         <section id="search">
             <div id="bar">
@@ -56,7 +55,7 @@ let Navbar = {
               <label for="locale"><h3>${localeLabel}</h3></label>
               <select id="locale" class="hamDrop">
                 <option value="en-US">${localeEN}</option>
-                <option value="zh-CN">${localeZH}</option>
+                <option value="fr-FR">${localeFR}</option>
               </select>
             </div>
         </section>
