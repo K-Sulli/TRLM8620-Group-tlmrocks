@@ -29,7 +29,8 @@ let OrderHistory = {
                 <h3>${statusHeading}</h3>
             </div>`;
 
-        orderHistory.forEach((order, key) => {
+        // Need to update this to match the changes made to getOrderDate in Order.js
+        /* orderHistory.forEach((order, key) => {
             view += `
                 <article class="orderItem">
                     <h3>${order.getOrderDate()}</h3>
@@ -37,6 +38,18 @@ let OrderHistory = {
                     <div class="gridPrice">
                         $
                         ${formatCurrencyWithCommas(order.total)}
+                    </div>
+                    <h3>${order.getOrderStatus()}</h3>
+                </article>` */
+
+        // Updated version. Thank you Aaron Long.
+        orderHistory.forEach((order, key) => {
+            view += `
+                <article class="orderItem">
+                    <h3>${order.getOrderDate()}</h3>
+                    <h3>${order.orderNumber}</h3>
+                    <div class="gridPrice">
+                        ${i18n.formatCurrency(order.total, "b")}
                     </div>
                     <h3>${order.getOrderStatus()}</h3>
                 </article>`
