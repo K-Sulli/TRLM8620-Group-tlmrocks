@@ -8,10 +8,18 @@ let formatCurrencyWithCommas = (x) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }*/
 
-// Attempt - need to finish
+
+//My Attempt
 let formatCurrency = (x) => {
-    return new i18n.formatCurrency().format(x);
+    return new i18n.formatCurrency('fr-FR', { style: 'currency', currency: 'EUR'}).format(x);
 }
+
+/*let formatCurrency= (x) => {
+    console.log(
+        return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(
+          number)
+        ),
+}*/
 
 
 let OrderHistory = {
