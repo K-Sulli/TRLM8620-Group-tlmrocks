@@ -50,10 +50,10 @@ class Order {
             return i18n.getString("OrderHistory", "processing")
         }
         if(diffDays < 4) {
-            return i18n.getString("OrderHistory", "Shipped", )
+            return i18n.getString("OrderHistory", "shipped", )
         }
         else{
-            return i18n.getString("OrderHistory", "Delivered");
+            return i18n.getString("OrderHistory", "delivered");
         }
     }
 
