@@ -18,14 +18,26 @@ class Order {
         this.total = total;
     }
 
-    getOrderDate() {
+    // need to fix this for the locale 
+    /* getOrderDate() {
         var dd = String(this.orderDate.getDate()).padStart(2, '0');
         var mm = String(this.orderDate.getMonth() + 1).padStart(2, '0'); //January is 0!
         var yyyy = this.orderDate.getFullYear();
 
-        let date = mm + '/' + dd + '/' + yyyy;
-        return date;
+        let date = mm + '/' + dd + '/' + yyyy;  //This is the problem 
+        return date; //this will need to be the i18n function
+    } */ 
+
+    // Updated version
+    getOrderDate() {
+        var dd = String(this.orderDate.getDate()).padStart(2, '0');
+        var mm = String(this.orderDate.getMonth() + 1).padStart(2, '0'); 
+        var yyyy = this.orderDate.getFullYear();
+
+        const date = new Date(yyyy, this.orderDate.getMonth(), dd);
+        return i18n.formatDate(date);
     }
+
 
     //create a dummy "order status" string
     getOrderStatus() {
@@ -35,13 +47,13 @@ class Order {
         var diffDays = Math.floor(Math.abs((this.orderDate.getTime() - now.getTime())/(oneDay))); //$NON-NLS-L$
 
         if(diffDays < 2) {
-            return "Processing";
+            return i18n.getString("OrderHistory", "processing")
         }
         if(diffDays < 4) {
-            return "Shipped"
+            return i18n.getString("OrderHistory", "shipped", )
         }
         else{
-            return "Delivered";
+            return i18n.getString("OrderHistory", "delivered");
         }
     }
 
