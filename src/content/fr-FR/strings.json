@@ -1,103 +1,109 @@
 {
     "title": {
-        "1": "Comfort Cruiser - Electric Beach Cruiser",
-        "2": "Tandem - Electric Bicycle Built for Two",
-        "3": "Elevate - Electric Mountatin Bike",
-        "4": "Strech - Electric Cargo Bike",
-        "5": "Basket Liner - Designed by Pedego",
-        "6": "Element: Platinum Edition",
-        "7": "Bike Covers - Designed by Pedego",
-        "8": "Designer Bell"
+        "1": "Cruiser Confort - Cruiser de plage électrique",
+        "2": "Tandem - Vélo électrique conçu pour deux personnes",
+        "3": "Élevation - Vélo électrique de montagne",
+        "4": "Strech - Vélo cargo électrique",
+        "5": "Revêtement de panier - Conçu par Pedego",
+        "6": "Élément : Édition platine",
+        "7": "Housses de vélo - Conçue par Pedego",
+        "8": "Sonnette Design"
+    },
+    "titles": {
+        "droids": "~Tous les vélos électriques",
+        "vehicles": "~Tous les accessoires",
+        "default": "~Tous les produits"
     },
     "desc": {
-        "1": "Pedego batteries are made with premium brand name lithium-ion cells supplied by the top manufacturers LG, Panasonic, and Samsung all meeting UL2580 compliance.",
-        "2": "Enjoy Supercharged performance for two. The Tandem is famous for its industry-leading range and breathtaking power.",
-        "3": "SMALL DETAILS MAKE A BIG DIFFERENCE. Every Pedego is lovingly designed in California with you in mind. They are crafted with select, premium quality components from the ground up. Small details make a big difference, and when you ride a Pedego, you can tell that we really care.",
-        "4": "The Stretch empowers you to haul people and stuff with ease. It comes standard with useful cargo accessories to carry loads of all shapes and sizes. You can easily carry kids and grown-ups with optional accessories.",
-        "5": "Express yourself with stylish designs. Prevent your stuff from being scratched or damaged. Convenient storage pockets for smaller items. Compatible with all Pedego baskets. Aluminum Basket version converts to a hand bag for easy carrying.",
-        "6": "Every Pedego is lovingly designed in California with you in mind. They are crafted with select, premium quality components from the ground up. Small details make a big difference, and when you ride a Pedego, you can tell that we really care.",
-        "7": "Weather resistant polyesters cover with reflective Pedego Logo. Bike Cover storage bag included. Securing straps and buckles.",
-        "8": "Playful designer bells to customize your Pedego."
+        "1": "Les batteries Pedego sont fabriquées avec des cellules lithium-ion de première qualité fournies par les meilleurs fabricants LG, Panasonic et Samsung, toutes conformes à la norme UL2580.",
+        "2": "Profitez de la performance Supercharged pour deux. Le Tandem est réputé pour son autonomie inégalée et sa puissance époustouflante.",
+        "3": "LES PETITS DÉTAILS FONT UNE GRANDE DIFFÉRENCE. Chaque Pedego est conçu avec amour en Californie avec vous à l'esprit. Ils sont fabriqués à partir de composants sélectionnés et de première qualité. Les petits détails font une grande différence, et lorsque vous roulez avec un Pedego, vous pouvez voir que nous nous en soucions vraiment.",
+        "4": "Le Stretch vous permet de transporter facilement des personnes et des marchandises. Il est équipé de série d'accessoires de chargement utiles pour transporter des charges de toutes formes et de toutes tailles. Vous pouvez facilement transporter des enfants et des adultes grâce aux accessoires optionnels.",
+        "5": "Exprimez-vous avec des designs élégants. Empêchez vos affaires d'être rayées ou endommagées. Poches de rangement pratiques pour les petits objets. Compatible avec tous les paniers Pedego. La version panier en aluminium se transforme en sac à main pour faciliter le transport.",
+        "6": "Chaque Pedego est conçu avec amour en Californie avec vous à l'esprit. Ils sont fabriqués à partir de composants sélectionnés et de première qualité. Les petits détails font une grande différence, et lorsque vous roulez avec un Pedego, vous pouvez voir que nous nous en soucions vraiment.",
+        "7": "Housse en polyesters résistante aux intempéries avec logo Pedego réfléchissant. Sac de rangement et housse de vélo inclus. Sangles et boucles de fixation.",
+        "8": "Des sonnettes design et ludiques pour personnaliser votre Pedego."
     },
     "Navbar": {
-        "searchPlaceholder": "What are you looking for?",
-        "searchButtonLabel": "search products",
-        "logoAlt": "Sample Logo",
-        "searchIconAlt": "search icon",
-        "greetingText": "Hello",
-        "historyLink": "Order History",
-        "arrowAlt": "Drop Down Arrow",
-        "cartAlt": "show cart",
-        "navLinkHome": "Home",
-        "navLinkDroids": "E-Bikes",
-        "navLinkVehicles": "Accessories"
+        "searchPlaceholder": "Que recherchez-vous ?",
+        "searchButtonLabel": "Recherche de produits",
+        "logoAlt": "Exemple de logo",
+        "searchIconAlt": "icône de recherche",
+        "greetingText": "Bonjour",
+        "historyLink": "Historique des commandes",
+        "arrowAlt": "Flèche descendante",
+        "cartAlt": "Afficher le panier",
+        "navLinkHome": "Accueil",
+        "navLinkDroids": "Vélos électriques",
+        "navLinkVehicles": "Accessoires"
     },
     "Home": {
-        "welcomeSubtitle": "The best electric bike is the one that fits you best.",
-        "symbolAlt": "Imperial Credit currency symbol"
+        "welcomeSubtitle": "Le meilleur vélo électrique est celui qui vous convient le mieux.",
+        "symbolAlt": "Symbole monétaire du Crédit Impérial",
+        "welcomeTitle": "~Bienvenue to Pedego!"
     },
     
     "Checkout": {
-        "checkoutTitle": "Checkout",
-        "shipSectionLabel": "Shipping Info",
-        "firstNameLabel": "First Name",
-        "lastNameLabel": "Last Name",
-        "coordinatesLabel": "Coordinates",
+        "checkoutTitle": "Passer à la caisse",
+        "shipSectionLabel": "Informations sur l'expédition",
+        "firstNameLabel": "Prénom",
+        "lastNameLabel": "Nom de famille",
+        "coordinatesLabel": "Coordonnées",
         "coordinatesHolder": "0,0,0",
-        "sectorLabel": "Sector",
-        "methodLabel": "Shipping Method",
-        "shipLightspeed": "Lightspeed",
-        "shipOvernight": "Overnight",
+        "sectorLabel": "Secteur",
+        "methodLabel": "Mode d'expédition",
+        "shipLightspeed": "Vitesse de lumière",
+        "shipOvernight": "Nuitée",
         "shipStandard": "Standard",
-        "paySectionLabel": "Payment",
-        "payNameLabel": "Name on Card",
-        "payNameHolder": "First Last",
-        "accountLabel": "Credit Number",
+        "paySectionLabel": "Paiement",
+        "payNameLabel": "Nom sur la carte",
+        "payNameHolder": "Prénom Nom",
+        "accountLabel": "Numéro de crédit",
         "accountHolder": "1234567-9876-00",
-        "securityLabel": "Security Code",
+        "securityLabel": "Code de sécurité",
         "securityHolder": "123456",
-        "expDateLabel": "Expiration Date",
-        "cartTitle": "Shopping Cart",
-        "deleteAlt": "remove item from cart",
-        "totalLabel": "Total: ",
-        "orderLabel": "PLACE ORDER",
-        "termsStatement": "I have read and agree to the Terms and Conditions",
-        "termsLink": "(View)",
-        "successMessage": "Order placed successfully!",
-        "noItemMessage": "Add items to cart to checkout."
+        "expDateLabel": "Date d'expiration",
+        "cartTitle": "Panier d'achat",
+        "deleteAlt": "retirer l'article du panier",
+        "totalLabel": "Total : ",
+        "orderLabel": "COMMANDE ID",
+        "termsStatement": "J'ai lu et j'accepte les conditions générales d'utilisation.",
+        "termsLink": "(Voir)",
+        "successMessage": "Commande passée avec succès !",
+        "noItemMessage": "Ajouter les articles au panier pour passer à la caisse."
     },
     "ProductShow": {
-        "qtyLabel": "Qty: ",
-        "addToCartLabel": "ADD TO CART"
+        "qtyLabel": "Qté : ",
+        "addToCartLabel": "AJOUTER AU PANIER"
     },
     "Cart": {
-        "cartTitle": "Shopping Cart",
-        "noItemMsg": "No items in cart.",
-        "deleteAlt": "Delete item from cart",
-        "totalTitle": "Total: ",
-        "checkoutLabel": "CHECKOUT",
-        "closeAlt": "Close Cart"
+        "cartTitle": "Panier d'achat",
+        "noItemMsg": "Aucun article dans le panier.",
+        "deleteAlt": "Supprimer un article du panier",
+        "totalTitle": "Total : ",
+        "checkoutLabel": "COMMANDER",
+        "closeAlt": "Fermer le panier"
     },
     "OrderHistory": {
-        "historyTitle": "Order History",
+        "historyTitle": "Historique des commandes",
         "dateHeading": "Date",
-        "numberHeading": "Order Number",
+        "numberHeading": "Numéro de commande",
         "totalHeading": "Total",
-        "statusHeading": "Status",
-        "processing" : "Processing",
-        "shipped" : "Shipped", 
-        "delivered" : "Delivered"
+        "statusHeading": "Statut",
+        "processing" : "Traitement",
+        "shipped" : "Expédié", 
+        "delivered" : "Livré"
     },
     "Error404": {
-        "errorMessage": "404 Error: Page not found."
+        "errorMessage": "Erreur 404 : Page non trouvée."
     },
     "Bottombar": {
-        "menuAlt": "open sidebar menu"
+        "menuAlt": "ouvrir le menu de la barre latérale"
     },
     "LocaleSelector": {
-        "localeLabel": "Locale: ",
-        "localeEN": "English - US",
+        "localeLabel": "Localité : ",
+        "localeEN": "Anglais - US",
         "localeFR": "Français - France"
     },
-    "Special": "Special"
+    "Special": "Spécial"
 }

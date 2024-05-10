@@ -9,6 +9,11 @@
         "7": "Bike Covers - Designed by Pedego",
         "8": "Designer Bell"
     },
+    "titles": {
+          "droids": "All E-Bikes",
+          "vehicles": "All Accessories",
+          "default": "All Products"
+        },
     "desc": {
         "1": "Pedego batteries are made with premium brand name lithium-ion cells supplied by the top manufacturers LG, Panasonic, and Samsung all meeting UL2580 compliance.",
         "2": "Enjoy Supercharged performance for two. The Tandem is famous for its industry-leading range and breathtaking power.",
@@ -34,7 +39,8 @@
     },
     "Home": {
         "welcomeSubtitle": "The best electric bike is the one that fits you best.",
-        "symbolAlt": "Imperial Credit currency symbol"
+        "symbolAlt": "Imperial Credit currency symbol",
+        "welcomeTitle": "Welcome to Pedego!"
     },
     
     "Checkout": {
