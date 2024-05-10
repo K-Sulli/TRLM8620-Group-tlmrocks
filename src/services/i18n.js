@@ -4,7 +4,7 @@ var stringsJSON = {};
 
 const i18n = {
 
-    //load resource json based on locale
+    // Load resource JSON based on locale
     loadStringsJSON: async (newLocale) => {
         const options = {
             method: 'GET',
@@ -12,59 +12,67 @@ const i18n = {
                 'Content-Type': 'application/json'
             }
         };
+        console.log(`Loading strings for locale: ${newLocale}`);
         try {
-            const response = await fetch(`./content/${newLocale}/strings.json`, options)
+            const response = await fetch(`./content/${newLocale}/strings.json`, options);
             stringsJSON = await response.json();
+            console.log('Strings loaded:', stringsJSON);
         } catch (err) {
             console.log('Error getting strings', err);
             if (newLocale != "en-US") {
+                console.log(`Falling back to default locale 'en-US' due to error.`);
                 updateLocale("en-US");
             }
         }
     },
 
-    //load resource json based on locale
+    // Retrieve a localized string from loaded JSON
     getString: (view, key) => {
-        return stringsJSON[view][key];
+        if (stringsJSON[view] && stringsJSON[view][key]) {
+            console.log(`Retrieved string [${view}:${key}]:`, stringsJSON[view][key]);
+            return stringsJSON[view][key];
+        } else {
+            console.log(`String not found for [${view}:${key}], returning default 'Not available'.`);
+            return 'Not available'; // Default fallback string if not found
+        }
     },
 
-    //determine the proper currency format based on locale and return html string
+    // Determine the proper currency format based on locale and return HTML string
     formatCurrency: (price, color) => {
-        let formatted;
         let converted = convertCurrency(price);
-        formatted = new Intl.NumberFormat(locale, { style: 'currency', currency: currencyMap[locale] }).format(converted); //$NON-NLS-L$ 
-        //return the formatted currency within template literal
-        return `<h4>${formatted}</h4>`
-
-
+        let formatted = new Intl.NumberFormat(locale, { style: 'currency', currency: currencyMap[locale] }).format(converted);
+        console.log(`Formatted currency for locale ${locale}: ${formatted}`);
+        return `<h4 style="color:${color};">${formatted}</h4>`;
     },
-    //return the locale based link to html file within the 'static' folder
+
+    // Return the locale-based link to HTML file within the 'static' folder
     getHTML: () => {
-        return `${locale}/terms.html`; //$NON-NLS-L$ 
+        let path = `${locale}/terms.html`;
+        console.log(`Generated locale-based link: ${path}`);
+        return path;
     },
-    //format date accoring to locale
+
+    // Format date according to locale
     formatDate: (date) => {
         var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
-        return new Intl.DateTimeFormat([locale, 'en-US'], options).format(date); //$NON-NLS-L$
+        let formattedDate = new Intl.DateTimeFormat([locale, 'en-US'], options).format(date);
+        console.log(`Formatted date for locale ${locale}: ${formattedDate}`);
+        return formattedDate;
     }
-}
+};
 
-//used to determine the correct currency symbol
+// Used to determine the correct currency symbol
 var currencyMap = {
     'en-US': 'USD',
     'fr-FR': 'EUR',
 };
 
-//function to perform rough conversion from galactic credits to real currencies
+// Function to perform rough conversion from galactic credits to real currencies
 var convertCurrency = (price) => {
-    switch (locale) {
-        case 'en-US':
-            return price * 1;
-        case 'fr-FR':
-            return price * 0.92; 
-        default:
-            return price;
-    }
+    let conversionRate = (locale === 'en-US' ? 1 : (locale === 'fr-FR' ? 0.92 : 1));
+    let converted = price * conversionRate;
+    console.log(`Converted ${price} to ${converted} using rate ${conversionRate} for locale ${locale}`);
+    return converted;
 }
 
 export default i18n;
